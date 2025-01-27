@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#body {
+height: 100vh;
+width: 100vw;
+background-color: burlywood;
+display: flex;
+justify-content: center;
+align-self: center;
+}
+
+#container {
+width: 336px;
+height: 192px;
+background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 60%,
+    #141717 60%
+    #141717 100%
+);
+}
+
+
+
