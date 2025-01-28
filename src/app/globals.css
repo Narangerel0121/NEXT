@@ -1,134 +1,116 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 #body {
-  height: 100vh;
-  background-color: burlywood;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100%;
+    background-color: bisque;
+    padding: 10px;
 }
 
-#cardContainer {
-  width: 336px;
-  height: 192px;
-  /* background: linear-gradient(
-  to right,
-  #ffffff 0%,
-  #ffffff 60%,
-  #141717 60%
-  #141717 100% */
-  /* ); */
-  background-color: #ffffff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row-reverse;
-  position: relative;
+.container {
+    background-color: #ffffff;
+    width: 336px;
+    height: 192px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
 }
 
-#blackSide {
-  width: 151px;
-  height: 192px;
-  background-color: #141717;
-  border-radius: 0px 10px 10px 0px;
-}
-/* 
-#vectors {
-  background-size: cover;
-  display: flex;
+.blackSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#blueVector {
-  left: 175px;
+.vectors {
+    position: relative;
+    height: 192px;
+    width: 163px;
+    border-radius: 0px 10px 10px 0px;
 }
 
-#orangeVector {
-  left: 179px;
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-top: 25px;
 }
 
-#purpleVector {
-  left: 183px;
-} */
-
-#briefInfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.logo {
+    width: 30px;
+    height: 30px;
 }
 
-#companyLogo {
-  width: 30px;
-  height: 30px;
+.companyName {
+    color: #ffffff;
+    font-size: 12px;
 }
 
-#QR {
-  width: 42px;
-  height: 42px;
+.tag {
+    color: #ffffff;
+    font-size: 6px;
 }
 
-#shape {
-  transform: rotate(90deg);
-  width: 192px;
-  height: 68px;
-  position: absolute;
-  right: 48px;
-  top: 32%;
+.qrCode {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 15%;
 }
 
-#whiteSide {
- 
+.whiteSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-#owner {
-  margin-top: 25px;
-  margin-bottom: 62px;
+.firstName {
+    font-size: 14px;
+    color: #0071BC;
 }
 
-#ownerName {
-  display: flex;
-  row-gap: 5px;
+.lastName {
+    font-size: 14px;
+    color: #F7931E;
 }
 
-#firstName {
-  font-family: Syne;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16.8px;
-  color: #0071BC;
+.occupation {
+    font-size: 8px;
+    color: #000000;
 }
 
-#lastName {
-  font-family: Syne;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16.8px;
-  color: #F7931E;
+.oneLine {
+    display: flex;
+    gap: 5px;
 }
 
-#occupation {
-  font-family: Montserrat;
-  font-size: 8px;
-  font-weight: 400;
-  line-height: 9.75px;
+.phoneNumber {
+    width: 8px;
+    height: 8px;
 }
 
-.icons {
-  width: 8px;
-  height: 8px;
+.email {
+    width: 7.5px;
+    height: 6.5px;
 }
 
-.infoText {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 8px;
-  line-height: 9.5px;
-  color: #000000;
+.address {
+    width: 6px;
+    height: 8px;
 }
 
-.iconWithText {
-  display: flex;
-  row-gap: 8px;
+.infoTexts {
+    font-size: 8px;
+    line-height: 9.7px;
+    color: #000000;
 }
