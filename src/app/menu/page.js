@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./global.css";
 import { getFirstDynamicReason } from "next/dist/server/app-render/dynamic-rendering";
 
 function Menu(props) {
@@ -119,7 +119,7 @@ const goods = [
 export default function Home() {
     const menus = []
     for (let i = 0; i < goods.length; i++) {
-        menus.push(<Menu good={goods[i]} ></Menu>)
+        menus.push(<Menu good={goods[i]}></Menu>)
     }
     return (
         <div id="body">
