@@ -4,30 +4,13 @@ import { getFirstDynamicReason } from "next/dist/server/app-render/dynamic-rende
 
 function Menu(props) {
     return (
-        <div className="card-container">
-            <div className="category">{props.good.category}</div>
-            <div className="meals">
-                <div className="mealInfo">
-                    <div className="oneLine">
-                        <div className="foodName">{props.good.type[0].foodName}</div>
-                        <div className="price">{props.good.type[0].price}</div>
-                    </div>
-                    <div className="recipe">{props.good.type[0].recipe}</div>
+        <div className="meals">
+            <div className="mealInfo">
+                <div className="oneLine">
+                    <div className="foodName">CHICKEN CAESER SALAD</div>
+                    <div className="price">24,900₮</div>
                 </div>
-                <div className="mealInfo">
-                    <div className="oneLine">
-                        <div className="foodName">{props.good.type[1].foodName}</div>
-                        <div className="price">{props.good.type[1].price}</div>
-                    </div>
-                    <div className="recipe">{props.good.type[1].recipe}</div>
-                </div>
-                <div className="mealInfo">
-                    <div className="oneLine">
-                        <div className="foodName">{props.good.type[2].foodName}</div>
-                        <div className="price">{props.good.type[2].price}</div>
-                    </div>
-                    <div className="recipe">{props.good.type[2].recipe}</div>
-                </div>
+                <div className="recipe">Served with Sundried tomatoes, chunky garlic croutons and grilled Chicken</div>
             </div>
         </div>
     );
@@ -118,14 +101,17 @@ const goods = [
 
 export default function Home() {
     const menus = []
-    for (let i = 0; i < goods.length; i++) {
-        menus.push(<Menu good={goods[i]}></Menu>)
+    for (let i = 0; i < goods.type.length; i++) {
+        menus.push(<Menu good={goods[i].type}></Menu>)
     }
     return (
         <div id="body">
             <h1 className="title">pranzo</h1>
             <div className="container">
-                {menus}
+                <div className="card-container">
+                    <div className="category">SALADS</div>
+                    {menus}
+                </div>
             </div>
         </div>
     )

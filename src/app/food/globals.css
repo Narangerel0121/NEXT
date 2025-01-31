@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#body {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#container {
+    width: 250px;
+    margin: 10px auto;
+}
+
+#checkInStock {
+    display: flex;
+    gap: 16px;
+}
+
+.oneLIne {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories {
+ display: flex;
+ justify-content: center;
+}
+

@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 250px;
+    margin: 20px auto;
+}
+
+#checkSection {
+display: flex;
+gap: 16px;
+}
+
+#category {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productCategoryRow {
+    display: flex;
+    justify-content: center;
+}
+
+.productRow {
+    display: flex;
+    justify-content: space-between;
+}
